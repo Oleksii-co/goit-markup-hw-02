@@ -66,6 +66,7 @@ body{
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--tertiary-text-color);
+    cursor: pointer;
 }
 .cap-title{
     font-weight: 900;
@@ -152,6 +153,8 @@ body{
     line-height: 1.6;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    cursor: pointer;
+    
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus{
