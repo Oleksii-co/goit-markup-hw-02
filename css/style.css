@@ -11,7 +11,6 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
 }
 .list{
     list-style: none;
@@ -39,6 +38,8 @@ body{
     color: var(--accent-color)
 }
 /* header */
+.header-link-address:hover,
+.header-link-address:focus,
 .header-link:hover,
 .header-link:focus{
     color: var(--accent-color);
@@ -47,7 +48,15 @@ body{
     color: var(--primary-text-color);
     font-size: 14px;
     font-weight: 500;
-    line-height: 1,14;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none; 
+}
+.header-link-address{
+    color: var(--secondary-text-color)
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none; 
 }
@@ -55,6 +64,10 @@ body{
 /* Ефективні рішення для вашого бізнесу */
 .cap{
     background-color: var(--tertiary-background-color);
+}
+.cap-btn:hover,
+.cap-btn:focus{
+    background-color: #188CE8 ;
 }
 .cap-btn{
     font-family: inherit;
@@ -67,6 +80,7 @@ body{
     letter-spacing: 0.06em;
     color: var(--tertiary-text-color);
     cursor: pointer;
+    background-color: var(--accent-color);
 }
 .cap-title{
     font-weight: 900;
@@ -77,16 +91,27 @@ body{
     color: var(--tertiary-text-color);
 }
 /* Особливості */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+} 
 .features-title{
     font-weight: 700;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
 .features-text{
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -126,6 +151,9 @@ body{
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
+.team-card{
+    background-color: var(--tertiary-text-color);
+}
 /* footer */
 .footer{
     background-color: var(--tertiary-background-color);
@@ -146,19 +174,27 @@ body{
     color: var(--footer-adress-color);
     text-decoration: none;    
 }
+.address:hover,
+.address:focus,
+.footer-contact:hover,
+.footer-contact:focus{
+    color: var(--accent-color);
+}
 /* Portfolio */
 .portfolio-btn{
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     cursor: pointer;
-    
+    background-color: var(--secondary-background-color);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus{
     color: var(--tertiary-text-color);
+    background-color: var(--accent-color);
 }
 .portfolio-title{
     font-weight: 700;
@@ -166,10 +202,15 @@ body{
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
+    text-decoration: none;
 }
 .portfolio-text{
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    text-decoration: none;
+}
+.portfolio-card{
+    text-decoration: none;
 }
