@@ -53,7 +53,7 @@ body{
     text-decoration: none; 
 }
 .header-link-address{
-    color: var(--secondary-text-color)
+    color: var(--secondary-text-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
